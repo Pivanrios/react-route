@@ -1,4 +1,5 @@
 import './App.css'
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   
@@ -6,9 +7,13 @@ function App() {
   return (
     <>
      <div id="container">
-      <h1>Hello React Router!</h1>
-      <div id="navbar">{/* navigation here */}</div>
-      <div id="main-section">{/* routes here */}</div>
+      <div id="navbar">nav bar</div>
+      <div id="main-section">
+        <Routes>
+          <Route></Route>
+          <Route></Route>
+        </Routes>
+        </div>
     </div>
     </>
   )
