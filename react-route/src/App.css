@@ -20,19 +20,31 @@ body > div {
   height: 100vh;
   width: 100vw;
 }h1{
-  border: 1px solid black;
+
   padding: 1px;
-}#container {
-  height: 100%;
+}.container {
+  height: 70vh;
   display: flex;
   flex-direction: row;
-}
-
-#container > div {
+}.container > div {
   display: flex;
 }
-/*2.) Navbar*/
-#navbar {
+/* 2.) navbar*/
+#navbar{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  gap: 5px;
+  padding-right: 20px;
+}#navbar>a{
+  
+}
+/* Main section*/
+
+
+
+/*2.) Color Sidebar*/
+#sidebar {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -41,36 +53,34 @@ body > div {
   justify-content: start;
   align-items: flex-start;
   border: 1px solid black;
-}a{
+}#sidebar>a{
   width: 100%;
   color: black;
-
 }a:hover{
   background-color: gray;
   color: white;
 }
 
-/*3.) Main Section*/
-#main-section {
-  flex-grow: 1;
-  border: 1px solid black;
-}
 
-#main-section > div {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /* 4.) Colors*/
-.red {
+.color{
+  width: 100%;
+
+}
+#red {
   background-color: #b05f6d;
   color: white;
 }
 
-.blue {
+#blue {
   background-color: #275db3;
   color: white;
 }
 
+/*footer*/
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
