@@ -5,7 +5,7 @@ export default function Titulo(){
     
     return(
         <div>
-              <h1>Workshop28</h1>
+              <h1>Workshop28.- React Router</h1>
               <Nav />
               <Outlet/>
               <Footer/>
