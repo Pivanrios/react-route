@@ -6,15 +6,30 @@ function App() {
 
   return (
     <>
-     <div id="container">
-      <div id="navbar">nav bar</div>
       <div id="main-section">
+        <h1>Workshop28</h1>
         <Routes>
-          <Route></Route>
-          <Route></Route>
+          <Route 
+            path='/red'
+            element={
+              <div className='red'>
+                <p>red</p>                
+              </div>
+            }>
+
+          </Route>
+          <Route
+            path='/blue'
+            element={
+              <div className='blue'>
+                <p>blue</p>
+              </div>
+            }>
+
+          </Route>
+
         </Routes>
-        </div>
-    </div>
+      </div>
     </>
   )
 }
