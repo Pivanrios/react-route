@@ -8,6 +8,8 @@ export default function Color(){
                 <h3>Colors</h3>
                 <Link to={'red'}>red</Link>
                 <Link to={'blue'}>blue</Link>
+                <Link to={'green'}>green</Link>
+                <Link to={'yellow'}>yellow</Link>
             </nav> 
         </>
     )
