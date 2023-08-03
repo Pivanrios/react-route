@@ -12,10 +12,6 @@ export default function Nav(){
                 to={"colors"}>
                 Colors
             </Link>
-            <Link
-                to={"about"}>
-                About
-            </Link>
         </nav>
     )
 }
