@@ -1,34 +1,51 @@
 import './App.css'
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   
 
   return (
     <>
-      <div id="main-section">
-        <h1>Workshop28</h1>
-        <Routes>
-          <Route 
-            path='/red'
-            element={
-              <div className='red'>
-                <p>red</p>                
-              </div>
-            }>
+      <h1>Workshop28</h1>
+      <div id='container'>
+        <div id="navbar">
+          <Link
+            to={"/red"}>
+              Red
+          </Link>
+          <Link
+            to={"/blue"}>
+              blue
+          </Link>
+          <Link
+            to={"/"}>
+              home
+            </Link>
+        </div>
+        <div id="main-section">
+          <Routes>
+            <Route 
+              path='/red'
+              element={
+                <div className='red'>
+                  <h2>red</h2>
 
-          </Route>
-          <Route
-            path='/blue'
-            element={
-              <div className='blue'>
-                <p>blue</p>
-              </div>
-            }>
+                </div>
+              }>
 
-          </Route>
+            </Route>
+            <Route
+              path='/blue'
+              element={
+                <div className='blue'>
+                  <p>blue</p>
+                </div>
+              }>
 
-        </Routes>
+            </Route>
+
+          </Routes>
+        </div>
       </div>
     </>
   )
