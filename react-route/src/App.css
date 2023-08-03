@@ -1,11 +1,15 @@
 /*Table of content
 
 1.) App
+2.) NavBar
+3.) Main Section
+4.) Colors
 2.) blue
 3.) red
 
 
 */
+/*1.) App*/
 * {
   font-family: arial, sans-serif;
   margin: 0;
@@ -15,25 +19,41 @@ body,
 body > div {
   height: 100vh;
   width: 100vw;
-}
-
-#container {
+}h1{
+  border: 1px solid black;
+  padding: 1px;
+}#container {
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #container > div {
   display: flex;
 }
-
+/*2.) Navbar*/
 #navbar {
-  padding: 2em;
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 150px;
+  padding: 0em;
+  justify-content: start;
+  align-items: flex-start;
+  border: 1px solid black;
+}a{
+  width: 100%;
+  color: black;
+
+}a:hover{
+  background-color: gray;
+  color: white;
 }
 
+/*3.) Main Section*/
 #main-section {
   flex-grow: 1;
+  border: 1px solid black;
 }
 
 #main-section > div {
@@ -43,6 +63,7 @@ body > div {
   justify-content: center;
 }
 
+/* 4.) Colors*/
 .red {
   background-color: #b05f6d;
   color: white;
